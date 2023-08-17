@@ -2,16 +2,16 @@
 
 int main(){
 
-    float numero1;
-    float numero2;
-    float resultado;
+    int numero1;
+    int numero2;
+    int resultado;
 
-    numero1 = 41.10;
-    numero2 = 11.20;
-    resultado = numero1 * numero2;
+    numero1 = 41222222;
+    numero2 = 3;
+    resultado = numero1 % numero2;
 
 
-    printf ("resultado: %.2f\n", resultado);
+    printf ("ultimo algarismo de %d: %d\n", numero1, resultado);
 
     return 0;
 }
