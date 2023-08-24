@@ -1,18 +1,41 @@
 #include <stdio.h>
 
 int main(){
+    long long int numero1;
+    long long int numero2;
+    long long int resultado;
+    char operacao;
 
-    int numero1;
-    int numero2;
-    int resultado;
+    printf("Insira uma operacao:\n");
+    scanf("%c", &operacao);
 
-    numero1 = 41222222;
-    numero2 = 3;
-    resultado = numero1 % numero2;
+    printf("Insira dois numeros:\n");
+    scanf("%lld", &numero1);
+    scanf("%lld", &numero2);
+
+    printf("operacao: %c\n", operacao);
 
 
-    printf ("ultimo algarismo de %d: %d\n", numero1, resultado);
+        if(operacao == '+'){
+            printf ("resultado: %lld\n",numero1 + numero2);
+        } else if(operacao == '-'){
+            printf ("resultado: %lld\n",numero1 - numero2);
+        } else if(operacao == '*'){
+            printf ("resultado: %lld\n",numero1 * numero2);
+        } else if(operacao == '/'){
+            printf ("resultado: %lld\n",numero1 / numero2);
+        } else if(operacao == '%'){
+            printf ("resultado: %lld\n",numero1 % numero2);
+        } else if (operacao == '>'&& numero1 > numero2){
+            printf ("%lld maior que %lld\n", numero1, numero2);
+        } else if (operacao == '>'&& numero1 == numero2){
+        printf ("%lld igual a %lld\n", numero1, numero2);   
+        } else {
+            printf ("operação invalida!\n");
+        }
+        
+
 
     return 0;
+    
 }
-
